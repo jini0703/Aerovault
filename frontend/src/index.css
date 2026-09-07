@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: var(--bg);
+  --color-brand-surface: var(--surface);
+  --color-brand-surface-secondary: var(--surface-secondary);
+  --color-brand-surface-tertiary: var(--surface-tertiary);
+  --color-brand-primary: var(--primary);
+  --color-brand-primary-hover: var(--primary-hover);
+  --color-brand-primary-soft: var(--primary-soft);
+  --color-brand-deep: var(--deep);
+  --color-brand-text: var(--text);
+  --color-brand-text-muted: var(--text-muted);
+  --color-brand-border: var(--border);
+  --color-brand-success: var(--success);
+  --color-brand-warning: var(--warning);
+  --color-brand-danger: var(--danger);
+  --color-brand-soft-blue: var(--soft-blue);
+  --color-brand-soft-lavender: var(--soft-lavender);
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg: #F7F7FF;
+    --surface: #FFFFFF;
+    --surface-secondary: #EEEFFF;
+    --surface-tertiary: #FFFFFF;
+    --primary: #8B8CF6;
+    --primary-hover: #7778E8;
+    --primary-soft: #C8B8FF;
+    --deep: #5556B8;
+    --text: #171A3A;
+    --text-muted: #6E7194;
+    --border: #E3E4F5;
+    --success: #9BE3C0;
+    --warning: #FFC99B;
+    --danger: #F28F9D;
+    --soft-blue: #B8C5FF;
+    --soft-lavender: #C8B8FF;
+  }
+
+  .dark {
+    --bg: #101329;
+    --surface: #181D3A;
+    --surface-secondary: #22284A;
+    --surface-tertiary: #2B3157;
+    --primary: #A5A6FF;
+    --primary-hover: #B8B9FF;
+    --primary-soft: #34386B;
+    --deep: #2B3157;
+    --text: #F5F5FF;
+    --text-muted: #A9ADCF;
+    --border: #343A60;
+    --success: #91DDB8;
+    --warning: #F4B985;
+    --danger: #F29AA8;
+    --soft-blue: #34386B;
+    --soft-lavender: #343A60;
+  }
+
+  body {
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+    font-family: var(--font-sans);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border); 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-surface-hover); 
+}
