@@ -1,0 +1,35 @@
+﻿spring:
+  application:
+    name: aerovault-backend
+  datasource:
+    url: \
+    driverClassName: org.postgresql.Driver
+    username: \
+    password: \
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  port: \
+
+app:
+  jwt:
+    secret: \
+    expiration: 86400000
+
+aws:
+  s3:
+    bucket: \
+    region: \
+    credentials:
+      access-key: \
+      secret-key: \
