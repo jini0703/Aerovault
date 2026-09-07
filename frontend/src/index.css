@@ -23,21 +23,21 @@
 
 @layer base {
   :root {
-    --bg: #F7F7FF;
+    --bg: #DFE0F5;
     --surface: #FFFFFF;
-    --surface-secondary: #EEEFFF;
-    --surface-tertiary: #FFFFFF;
-    --primary: #8B8CF6;
-    --primary-hover: #7778E8;
+    --surface-secondary: #ECEEFF;
+    --surface-tertiary: #F4F5FF;
+    --primary: #7071F0;
+    --primary-hover: #5D5EE0;
     --primary-soft: #C8B8FF;
     --deep: #5556B8;
     --text: #171A3A;
-    --text-muted: #6E7194;
-    --border: #E3E4F5;
+    --text-muted: #5A5D80;
+    --border: #C8CAE8;
     --success: #9BE3C0;
     --warning: #FFC99B;
     --danger: #F28F9D;
-    --soft-blue: #B8C5FF;
+    --soft-blue: #A5B4FF;
     --soft-lavender: #C8B8FF;
   }
 

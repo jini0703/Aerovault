@@ -57,7 +57,7 @@ export default function AuthLayout() {
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="bg-brand-surface border border-brand-border rounded-3xl shadow-2xl shadow-brand-primary/5 p-8 relative overflow-hidden"
+            className="bg-brand-surface border border-brand-border rounded-3xl shadow-2xl shadow-black/15 ring-1 ring-brand-border/50 p-8 relative overflow-hidden"
           >
             {/* Soft top gradient */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-primary-soft via-brand-primary to-brand-soft-blue" />

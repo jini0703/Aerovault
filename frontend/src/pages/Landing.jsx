@@ -22,11 +22,7 @@ export default function Landing() {
             {/* Links */}
             <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-brand-text-muted">
               <a href="#" className="hover:text-brand-primary transition-colors">Home</a>
-              <a href="#" className="hover:text-brand-primary transition-colors">About Us</a>
-              <a href="#" className="hover:text-brand-primary transition-colors">Services</a>
-              <a href="#" className="hover:text-brand-primary transition-colors">Pages</a>
-              <a href="#" className="hover:text-brand-primary transition-colors">Blogs</a>
-              <a href="#" className="hover:text-brand-primary transition-colors">Contact Us</a>
+              <a href="#about-project" className="hover:text-brand-primary transition-colors">About Project</a>
             </div>
 
             {/* Profile Button */}
@@ -158,91 +154,56 @@ export default function Landing() {
         </div>
       </div>
 
-      {/* Team Section */}
-      <div className="max-w-6xl mx-auto px-4 py-20 relative z-20 bg-brand-bg">
-        <div className="grid md:grid-cols-4 gap-8">
-          
-          {/* Team Text Content */}
-          <div className="col-span-1 flex flex-col justify-center">
-            <div className="flex items-center text-brand-primary text-sm font-bold mb-4">
-              <Folder className="w-4 h-4 mr-2" />
-              Meet Management Team
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-text leading-tight mb-4">
-              Handles All Of Your File Needs
-            </h2>
-            <p className="text-brand-text-muted text-sm mb-8 leading-relaxed">
-              Aerovault provides secure, reliable, and beautifully designed cloud storage for teams and individuals.
-            </p>
-            <div className="flex gap-3">
-              <button className="w-12 h-12 rounded-full bg-brand-surface border border-brand-border text-brand-text flex items-center justify-center hover:bg-brand-surface-secondary transition-colors">
-                <ArrowLeft className="w-5 h-5" />
-              </button>
-              <button className="w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-hover transition-colors shadow-md shadow-brand-primary/20">
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-
-          {/* Team Cards */}
-          <div className="col-span-3 grid md:grid-cols-3 gap-6">
-            
-            {/* Card 1 */}
-            <div className="bg-brand-surface rounded-3xl overflow-hidden shadow-sm border border-brand-border flex flex-col group transition-shadow hover:shadow-lg hover:shadow-brand-primary/5">
-              <div className="h-64 bg-brand-surface-secondary relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="CEO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-5 flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold text-brand-text">Paul Alexander</h3>
-                  <p className="text-xs text-brand-text-muted mt-1">CEO</p>
-                </div>
-                <button className="w-10 h-10 rounded-full bg-brand-primary-soft text-brand-primary flex items-center justify-center hover:bg-brand-primary hover:text-white transition-colors">
-                  <Share2 className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-brand-primary rounded-3xl overflow-hidden shadow-lg shadow-brand-primary/20 flex flex-col group text-white">
-              <div className="h-64 bg-brand-surface relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop" alt="Designer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                
-                {/* Social icons overlay */}
-                <div className="absolute right-3 bottom-3 flex flex-col gap-2">
-                  <button className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm text-white flex items-center justify-center hover:bg-white/40 transition-colors"><Globe className="w-4 h-4" /></button>
-                  <button className="w-8 h-8 rounded-full bg-brand-primary text-white flex items-center justify-center shadow-md"><Mail className="w-4 h-4" /></button>
-                </div>
-              </div>
-              <div className="p-5 flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold">Jessica Johns</h3>
-                  <p className="text-xs text-white/80 mt-1">Designer</p>
-                </div>
-                <button className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm text-white flex items-center justify-center hover:bg-white/40 transition-colors">
-                  <Share2 className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-brand-surface rounded-3xl overflow-hidden shadow-sm border border-brand-border flex flex-col group transition-shadow hover:shadow-lg hover:shadow-brand-primary/5">
-              <div className="h-64 bg-brand-surface-secondary relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop" alt="Manager" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div className="p-5 flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold text-brand-text">David Smith</h3>
-                  <p className="text-xs text-brand-text-muted mt-1">Engineering Manager</p>
-                </div>
-                <button className="w-10 h-10 rounded-full bg-brand-primary-soft text-brand-primary flex items-center justify-center hover:bg-brand-primary hover:text-white transition-colors">
-                  <Share2 className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
+      {/* Credit Section */}
+      <div id="about-project" className="max-w-6xl mx-auto px-4 py-32 relative z-20 bg-brand-bg flex flex-col items-center justify-center text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-primary/10 text-brand-primary text-sm font-bold mb-6 border border-brand-primary/20"
+        >
+          <Folder className="w-4 h-4" />
+          Aerovault Architecture
+        </motion.div>
+        
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-4xl md:text-5xl font-bold text-brand-text leading-tight mb-6 max-w-2xl"
+        >
+          Engineered & Designed by <br/>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-soft-blue relative inline-block mt-2">
+            Anjini Pandey
+            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-brand-primary/0 via-brand-primary/50 to-brand-primary/0 rounded-full" />
+          </span>
+        </motion.h2>
+        
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="text-brand-text-muted text-base md:text-lg mb-10 max-w-2xl leading-relaxed"
+        >
+          A full-stack, enterprise-grade cloud storage platform featuring Java Spring Boot, PostgreSQL, AWS S3, and React. Built from the ground up for security, speed, and seamless file management.
+        </motion.p>
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="flex items-center gap-6"
+        >
+          <button className="w-14 h-14 rounded-full bg-brand-surface border border-brand-border text-brand-text flex items-center justify-center hover:bg-brand-primary hover:text-white transition-all shadow-md hover:shadow-brand-primary/20 hover:-translate-y-1">
+             <Globe className="w-6 h-6" />
+          </button>
+          <button className="w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-hover transition-all shadow-lg shadow-brand-primary/20 hover:-translate-y-1">
+             <Mail className="w-6 h-6" />
+          </button>
+        </motion.div>
       </div>
 
     </div>
